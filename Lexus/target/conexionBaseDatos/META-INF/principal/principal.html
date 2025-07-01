@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Asistencia Mecánica</title>
+    <link rel="stylesheet" href="/principal/principal.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo-left">
+                <img src="/images/logo-mecanico.png" class="logo-image" alt="Logo Asistencia Mecánica" />
+            </div>
+            <div class="title">
+                <h1>SISTEMA DE ASISTENCIA MECÁNICA</h1>
+                <p class="subtitle">Gestión de vehículos, problemas y soluciones</p>
+            </div>
+        </div>
+
+        <div id="nav-placeholder"></div>
+        <div class="logo-right">
+            <img src="/images/icono-herramientas.png" class="tools-icon" alt="Herramientas">
+        </div>
+    </header>
+
+    <main>
+        <div class="background-image">
+            <div class="content-box">
+                <h1>BIENVENIDO AL SISTEMA</h1>
+                <p class="slogan">Gestión integral de problemas vehiculares y soluciones mecánicas</p>
+
+                <!-- Estadísticas rápidas -->
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <h3>Vehículos registrados</h3>
+                        <p id="total-vehiculos">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Problemas resueltos</h3>
+                        <p id="problemas-resueltos">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Soluciones disponibles</h3>
+                        <p id="soluciones-disponibles">0</p>
+                    </div>
+                </div>
+
+                <!-- Sección de botones de navegación -->
+                <div class="form-group">
+                    <a href="/perfil.html"><button>Mi Perfil</button></a>
+                    <a href="/vehiculos.html"><button>Mis Vehículos</button></a>
+                    <a href="/problemas.html"><button>Registrar Problema</button></a>
+                    <a href="/soluciones.html"><button>Buscar Soluciones</button></a>
+                    <a href="/cerrar-sesion"><button>Cerrar Sesión</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Sistema de Asistencia Mecánica &copy; 2023 - Base de datos de vehículos y soluciones</p>
+    </footer>
+
+    <script>
+        // Aquí iría el código para cargar las estadísticas desde la base de datos
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simulación de datos (en un sistema real estos vendrían de tu API/SQL)
+            document.getElementById('total-vehiculos').textContent = '124';
+            document.getElementById('problemas-resueltos').textContent = '356';
+            document.getElementById('soluciones-disponibles').textContent = '189';
+        });
+    </script>
+</body>
+</html>
